@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #202b3c;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #ffffff;
+}
+
+.navbar h2 {
+    font-size: 26px;
+}
+
+.navbar h2 span {
+    color: #5277f5;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #202b3c;
+}
+
+.hero {
+    min-height: 480px;
+    background: #edf1ff;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #5277f5;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #657084;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #5277f5;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.templates, .about, .contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.template-card {
+    max-width: 400px;
+    margin: 35px auto 0;
+    padding: 20px;
+    border: 1px solid #e1e5ee;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.template-preview {
+    height: 180px;
+    background: #dce5ff;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.template-card h3 {
+    margin-top: 18px;
+}
+
+.template-card span {
+    display: block;
+    color: #5277f5;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+footer {
+    background: #202b3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
